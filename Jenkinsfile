@@ -4,7 +4,7 @@ def beanstalkRegion = "us-east-1"
 def beanstalkInstanceProfile = ""
 def beanstalkServiceRole = ""
 
-node {
+node ('master') {
     
   stage 'Checkout'
   //git 'https://github.com/kulinski/jenkins-docker-maven-example.git'
